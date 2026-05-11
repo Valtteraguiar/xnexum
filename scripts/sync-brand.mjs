@@ -10,6 +10,11 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 
+if (process.env.VERCEL) {
+  console.log("[sync-brand] Ambiente Vercel: a usar ficheiros já em public/brand (repo).");
+  process.exit(0);
+}
+
 const candidates = [
   process.env.XNEXUM_BRAND_KIT,
   path.join(root, "xnexum_brandkit"),

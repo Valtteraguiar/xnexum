@@ -2,6 +2,9 @@
   "name": "xnexum",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "sync-brand": "node scripts/sync-brand.mjs",
     "prebuild": "node scripts/sync-brand.mjs",

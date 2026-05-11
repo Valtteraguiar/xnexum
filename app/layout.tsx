@@ -3,8 +3,14 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { SiteShell } from "@/components/site-shell";
 
+function siteUrl(): string {
+  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return "https://xnexum.com.br";
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://xnexum.com.br"),
+  metadataBase: new URL(siteUrl()),
   title: "xNexum — Onde conexões se tornam sistema.",
   description:
     "Plataformas digitais, sistemas inteligentes e infraestrutura SaaS multi-tenant para organizações modernas.",
