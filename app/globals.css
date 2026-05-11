@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Paleta derivada do brand kit (logotipo + manual) */
+  --color-nexum-void: #050505;
+  --color-nexum-slate: #0c0f14;
+  --color-nexum-blue: #5b9fe8;
+  --color-nexum-blue-hover: #3d84d9;
+  --color-nexum-ember: #c58e58;
+  --color-nexum-ember-hover: #a67445;
+  --color-nexum-snow: #e5e7eb;
+  --color-nexum-mist: #9ca3af;
+  --color-nexum-line: rgba(229, 231, 235, 0.1);
+  --color-nexum-glow: rgba(91, 159, 232, 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-nexum-void text-nexum-snow antialiased;
+    font-feature-settings: "ss01" on, "cv01" on;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-nexum-blue) 38%, transparent);
+    color: var(--color-nexum-void);
+  }
+}
