@@ -6,7 +6,7 @@ import { SiteShell } from "@/components/site-shell";
 function siteUrl(): string {
   if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "https://xnexum.com.br";
+  return "https://www.xnexum.com.br";
 }
 
 export const metadata: Metadata = {
