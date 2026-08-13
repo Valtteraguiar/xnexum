@@ -3,13 +3,10 @@ import { Logo } from "@/components/logo";
 
 const legal = [
   { href: "/brand/xNexum_Manual_da_Marca.pdf", label: "Manual da marca" },
-  { href: "#", label: "Termos" },
-  { href: "#", label: "Privacidade" },
 ];
 
 const social = [
-  { href: "https://www.linkedin.com", label: "LinkedIn" },
-  { href: "https://github.com", label: "GitHub" },
+  { href: "https://github.com/Valtteraguiar/xnexum", label: "GitHub" },
 ];
 
 export function Footer() {
@@ -36,7 +33,7 @@ export function Footer() {
               <ul className="mt-4 space-y-2 text-sm text-nexum-snow/90">
                 <li>
                   <Link href="#solucoes" className="transition-colors hover:text-white">
-                    Plataforma
+                    Soluções
                   </Link>
                 </li>
                 <li>
