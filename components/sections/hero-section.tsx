@@ -109,7 +109,7 @@ export function HeroSection() {
               transition={{ duration: 0.55, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
               className="mt-5 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-nexum-snow sm:text-5xl lg:text-[3.25rem] lg:leading-[1.06]"
             >
-              Conectando pessoas, instituições e operações em um único ecossistema digital.
+              Arquitetura, governança e plataformas verificáveis para operações institucionais.
             </motion.h1>
             <motion.p
               initial={reduceMotion ? false : { opacity: 0, y: 16 }}
@@ -117,8 +117,8 @@ export function HeroSection() {
               transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="mt-6 max-w-xl text-base leading-relaxed text-nexum-mist sm:text-lg"
             >
-              A xNexum desenvolve plataformas e sistemas inteligentes capazes de transformar relações
-              institucionais complexas em fluxos digitais organizados, seguros e integrados.
+              A xNexum estrutura relações complexas entre pessoas, entidades e organizações em fluxos
+              digitais auditáveis, seguros e preparados para operar com múltiplos públicos.
             </motion.p>
             <motion.div
               initial={reduceMotion ? false : { opacity: 0, y: 16 }}
@@ -127,16 +127,16 @@ export function HeroSection() {
               className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
               <Link
-                href="#solucoes"
+                href="#contato"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-nexum-snow px-7 text-sm font-semibold text-nexum-void transition-[transform,background-color] hover:bg-white active:scale-[0.98]"
               >
-                Conhecer plataforma
+                Solicitar demonstração institucional
               </Link>
               <Link
-                href="#contato"
+                href="#ecossistema"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-nexum-line bg-nexum-slate/20 px-7 text-sm font-medium text-nexum-snow transition-[border-color,background-color] hover:border-nexum-mist/40 hover:bg-nexum-slate/35"
               >
-                Solicitar demonstração
+                Entender o ecossistema
               </Link>
             </motion.div>
             <motion.p
