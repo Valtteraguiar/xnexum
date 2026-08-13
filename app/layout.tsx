@@ -11,19 +11,22 @@ function siteUrl(): string {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
-  title: "xNexum — Onde conexões se tornam sistema.",
+  title: "xNexum — Arquitetura e governança para operações institucionais.",
   description:
-    "Plataformas digitais, sistemas inteligentes e infraestrutura SaaS multi-tenant para organizações modernas.",
+    "Arquitetura, governança e plataformas verificáveis para operações institucionais com múltiplos públicos, dados sensíveis e necessidade de auditoria.",
   keywords: [
     "xNexum",
-    "plataforma institucional",
+    "governança institucional",
+    "arquitetura digital",
     "SaaS",
+    "GovTech",
     "assembleias digitais",
-    "gestão sindical",
+    "rastreabilidade",
+    "operações críticas",
   ],
   openGraph: {
     title: "xNexum",
-    description: "Onde conexões se tornam sistema.",
+    description: "Arquitetura e governança para operações institucionais verificáveis.",
     type: "website",
     images: [{ url: "/brand/xnexum_logo_color.png", width: 970, height: 460, alt: "xNexum" }],
   },
